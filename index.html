@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <p>Left panel content goes here</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Awesome App</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page scrollable-tabs-page">
+
+
+            <!-- scrollable tab -->
+            <div class="scrollable-tab toolbar tabbar navbar--main-color tabbar-scrollable">
+              <div class="toolbar-inner">
+                <a href="#tab-1" class="tab-link active">TAB 1<span class="tab-link-highlight"></span></a>
+                <a href="#tab-2" class="tab-link">TAB 2 <span class="tab-link-highlight"></span></a>
+                <a href="#tab-3" class="tab-link">TAB 3<span class="tab-link-highlight"></span></a>
+                <a href="#tab-4" class="tab-link">TAB 4<span class="tab-link-highlight"></span></a>
+              </div>
+            </div>
+
+
+            <!-- Scrollable page content-->
+            <div class="page-content">
+
+
+              <div class="tabs">
+
+                <div id="tab-1" class="tab active">
+                    <div class="content-block">
+                      <div class="content-block-inner">
+                        <br><br><br><br><br><br>
+                        tab 1
+                        <br><br><br><br><br><br>
+                      </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab">
+                  <div class="content-block">
+                    <div class="content-block-inner">
+                      <br><br><br><br><br><br>
+                      tab 2
+                      <br><br><br><br><br><br>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-3" class="tab">
+                  <div class="content-block">
+                    <div class="content-block-inner">
+                      <br><br><br><br><br><br>
+                      tab 3
+                      <br><br><br><br><br><br>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab-4" class="tab">
+                  <div class="content-block">
+                    <div class="content-block-inner">
+                      <br><br><br><br><br><br>
+                      tab 4
+                      <br><br><br><br><br><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>

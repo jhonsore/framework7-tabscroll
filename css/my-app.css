@@ -1,0 +1,58 @@
+.scrollable-tabs-page .navbar:after,
+.scrollable-tabs-page .toolbar:before {
+    background: none;
+}
+.scrollable-tabs-page .tabbar .tab-link-highlight {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #0a6ebd;
+    background: dodgerblue;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.scrollable-tabs-page .scrollable-tab .tab-link-highlight {
+    width: 100%;
+    display: none;
+}
+.scrollable-tabs-page .scrollable-tab .toolbar-inner {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+    padding: 0;
+}
+.scrollable-tabs-page .scrollable-tab .toolbar-inner::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    -webkit-appearance: none;
+    opacity: 0 !important;
+}
+.scrollable-tabs-page .scrollable-tab a.tab-link,
+.scrollable-tabs-page .scrollable-tab a.link {
+    width: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    -ms-flex: 0;
+    padding: 0 32px;
+    color: rgba(255, 255, 255, 0.7);
+    color: #333333;
+}
+.scrollable-tabs-page .scrollable-tab a.tab-link.active {
+    color: dodgerblue;
+}
+.scrollable-tabs-page .scrollable-tab a.tab-link.active .tab-link-highlight {
+    display: block;
+}
+.scrollable-tabs-page .page-content {
+    padding-top: 88px;
+}
+.scrollable-tabs-page .scrollable-tab {
+    bottom: auto;
+    top: 44px;
+}
